@@ -3,12 +3,13 @@
   background-color: #dcc9f4;
   padding: 20px 0px;
   margin: auto;
+  text-align: center;
+  display: block;
 }
-#top-child01 {
-  width: 160px;
+.top-child {
+  width: 20%;
   background-color: #ffd9df;
-  padding-left: auto;
-  padding-right: auto;
+  display: inline-block;
 }
 #top-child02 {
   width:  160px;
