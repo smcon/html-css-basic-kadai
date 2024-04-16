@@ -1,10 +1,12 @@
-body {
+html {
   font-size: 20px;
+}
+body {
   font-family: "Arial" , "Meiryo" , "sans-serif";
   text-align: center;
 }
 .sans-serif {
-  font-size: 40px;
+  font-size: 2rem;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
