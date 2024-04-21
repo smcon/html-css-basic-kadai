@@ -1,0 +1,12 @@
+.flexbox-container {
+  display: flex;
+  /*flex-wrapが反家されない問題*/
+  flex-wrap: wrap;
+  padding: 5px;
+  background-color: lightcyan;
+}
+.flexbox-item {
+  padding: 5px;
+  margin: 5px;
+  background-color: orange;
+}
