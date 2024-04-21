@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-size: 20px;
+}
+header {
+  background-color: rgb(244, 79, 79);
+  margin-bottom: 20px;
+  text-align: center;
+}
+h1 {
+  color: rgb(255, 255, 255);
+}
+main {
+  margin: 10px;
+}
+#parent {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  div {
+      display: block;
+  }
+}
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+h2 {
+  border-bottom: dotted 3px rgb(236, 122, 122);
+}
+.content {
+  border: solid 3px rgb(238, 204, 204);
+  flex-basis: 25%;
+  padding: 10px ,15px;
+  margin: 20px, 0px;
+  text-align: center;
+}
+.content p:nth-of-type(2)::first-letter {
+  color: rgb(97, 206, 249);
+  font-weight: bold;
+}
+img {
+  margin: 10px, 0px;
+  flex-basis: 70%;
+}
+
+footer {
+  text-align: center;
+  color: rgb(244, 79, 79);
+}
