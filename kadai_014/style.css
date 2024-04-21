@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 .sans-serif {
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -21,6 +21,6 @@ body {
 .text-skybule {
   color: skyblue;
 }
-.bold {
+#bold p {
   font-weight: bold;
 }
