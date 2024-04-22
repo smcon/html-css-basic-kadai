@@ -1,0 +1,54 @@
+#contener {
+  background-color: #4d4d4d;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+#contener > div {
+  background-color: #B3B3B3;
+  width: 10%;
+  margin: 30px 20px;
+}
+#contener p {
+  text-align: center;
+  color: #ffff;
+}
+.photo01 {
+  margin: 40px 0;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+#aaa {
+  text-align: center;
+}
+
+.infomation p {
+  background-color: #B3B3B3;
+  width: 80%;
+}
+p {
+  padding: 50px;
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  background-color: #4d4d4d;
+  color: #ffff;
+}
+
+#final {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin: 80px;
+}
+#final > div {
+  width: auto;
+}
+#final > img {
+  width: auto;
+  height: auto;
+}
