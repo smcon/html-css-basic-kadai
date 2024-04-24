@@ -7,48 +7,52 @@
 #contener > div {
   background-color: #B3B3B3;
   width: 10%;
-  margin: 30px 20px;
+  margin: auto 20px;
+  height: 60%;
 }
 #contener p {
   text-align: center;
   color: #ffff;
 }
-.photo01 {
+.pc {
   margin: 40px 0;
   text-align: center;
 }
 h2 {
   text-align: center;
 }
-#aaa {
+#coment {
   text-align: center;
 }
-
-.infomation p {
+.infomation {
+  text-align: center;
+}
+.center {
+  height: 30px;
   background-color: #B3B3B3;
   width: 80%;
-}
-p {
-  padding: 50px;
+  padding: 30px;
   margin: 10px;
 }
-
+.center > p {
+  text-align: left;
+}
+#coment {
+  padding: 30px;
+  margin: 10px;
+} 
 footer {
   text-align: center;
   background-color: #4d4d4d;
   color: #ffff;
+  width: 100%;
 }
 
-#final {
-  display: inline-block;
-  justify-content: center;
+.sub {
+  width: 100%;
   text-align: center;
-  margin: 80px;
+  display: flex;
 }
-#final > div {
-  width: auto;
-}
-#final > img {
-  width: auto;
-  height: auto;
+.sub img {
+  width: 100%;
 }
