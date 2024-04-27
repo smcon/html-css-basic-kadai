@@ -2,25 +2,25 @@ html {
   font-size: 20px;
 }
 body {
-  font-family: "Arial" , "Meiryo" , "sans-serif";
+  font-family: "Arial","Meiryo",sans-serif;
   text-align: center;
 }
-.sans-serif {
-  font-size: 1.2rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: italic;
-  letter-spacing: 2em;
-  border-bottom: solid 3px rgb(115,115,114);
-  text-shadow: 4px 4px 1px gray;
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1.2em;
+  border-bottom: solid 3px rgb(115, 115, 114);
+  text-shadow: 2px 2px 3px gray;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-.text-pink {
-  color: rgb(255, 192, 203)
+.pink {
+  color: rgb(255, 192, 203);
 }
-.text-skybule {
+.bule {
   color: skyblue;
 }
-#bold p {
+#parent > p {
   font-weight: bold;
 }
