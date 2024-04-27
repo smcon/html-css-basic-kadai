@@ -1,0 +1,18 @@
+body {
+  min-width: 375px;
+  margin: 0;
+}
+#coffee {
+  width: 100%;
+}
+#logo-withe {
+  background-color: black;
+}
+#close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#nav-sp > a {
+  display: block;
+}
