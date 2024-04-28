@@ -4,6 +4,8 @@ header {
   justify-content: center;
   margin: 10px;
   height: 100px;
+  align-items: center;
+  padding: 20px;
 }
 nav {
   background-color: #B3B3B3;
@@ -11,6 +13,7 @@ nav {
   margin: 20px;
   width: 100px;
   text-align: center;
+  padding: 20px;
 }
 main {
   text-align: center;
@@ -31,25 +34,30 @@ main p {
 .child {
   background-color: #B3B3B3;
   margin: 20px 60px;
+  padding: 10px;
 }
 .text {
-  left: 10px;
+  text-align: left;
 }
 #infomation {
   background-color: #B3B3B3;
   margin: 20px 60px;
   display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 #infomations-child {
-  margin: 10px;
+  margin: 20px;
 }
 .photo {
   width: 80%;
 }
 footer {
   background-color: #4D4D4D;
-  text-align: center;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a {
   color: #fff;
