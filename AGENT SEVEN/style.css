@@ -1,0 +1,53 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+h1::before{
+  content: "◆";
+}
+#nav-01 {
+  display: flex;
+  align-items: center;
+}
+#consultation {
+  display: flex;
+}
+.box {
+  border: solid;
+  color: blue;
+  padding: 30px 20px;
+  margin: 0 10px;
+}
+/*aタグの編集*/
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+p:hover {
+  color: red;
+}
+
+main {
+  width: 100%;
+}
+#diamond {
+  position: absolute;
+  top: 400px;
+  left: 45%;
+  width: 200px;
+  height: 200px;
+  background: blue;
+  transform: rotate(45deg);
+}
+#coment {
+  position: absolute;
+  top: 600px;
+  left: 100px;
+  margin: 50px;
+  font-weight: bold;
+  font-size: 300%;
+}
