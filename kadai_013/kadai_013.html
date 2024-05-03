@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>課題13</title>
-    <meta name="description" content="課題13です">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-  </head>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oraganic Cafe</title>
+  <meta name="description" content="自家焙煎のコーヒーがお家で楽しめるOrganic Cafe">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
   <header>
-    <img id="menu-sp" src="images/button-menu.png" alt="ナビを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
-   <nav id="nav-sp">
-    <img id="close" src="images/button-close.png" alt="ナビを閉じる">
-    <a id="logo-sp" href="kadai_013.html"><img src="images/logo.png" alt="トップページに戻る"></a>
-    <a href="kadai_013.html#concept">CONCEPT</a>
-    <a href="kadai_013.html#product">PRODUCT</a>
-    <a href="kadai_013.html#contact">CONTACT</a>
-   </nav>
- </header>
-  <body>
-    <img id="logo-withe" src="images/logo-sp.png" alt="ロゴ">
+    <a id="logo" href="kadai_013.html"><img src="images/logo.png" alt="トップに戻る"></a>
+
+    <!--PC用ナビ-->
+    <nav id="nav-pc">
+      <a href="kadai_013.html">CONCEPT</a>
+      <a href="kadai_013.html">PRODUCT</a>
+      <a href="kadai_013.html">CONTACT</a>
+    </nav>
+    <!--スマホ用ナビ-->
+    <img id="menu-sp" src="images/button-menu.png" alt="ナビを開く"onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <nav id="nav-sp">
+      <img id="close" src="images/button-close.png" alt="ナビを閉じる"onclick="document.getElementById('nav-sp').style.display = 'block'">
+      <a id="logo-sp" href="kadai_013.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="images/logo-sp.png" alt="トップページに戻る"></a>
+      <a class="menu" href="kadai_013.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONCEPT</a>
+      <a class="menu" href="kadai_013.html" onclick="document.getElementById('nav-sp').style.display = 'none'">PRODUCT</a>
+      <a class="menu" href="kadai_013.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Organic Cafe</h1>
     <p>自家焙煎コーヒーが買えるお店</p>
-    <img id="coffee" src="images/main-image.jpg" alt="コーヒー">
-  </body>
+    <img src="images/main-image.jpg" alt="コーヒー">
+  </main>
+</body>
 </html>
