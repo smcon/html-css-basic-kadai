@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100px;
+  width: 100%;
+  background-image: url("./images/pc01.jpg");
+  background-size: cover;
+  /*いる？？*/
+}
+
+body::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 20px;
+}
+header .logo {
+  height: 100px;
+  width: 100px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+header nav ul li a:hover {
+  color: yellow;
+}
+header nav ul li .contact {
+  
+  background-color: teal;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+  color: white;
+}
+main h1 {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+main p {
+  font-size: 30px;
+  font-weight: 600;
+}
+main .button-area {
+  margin-top: 40px;
+}
+main .button-area button {
+  padding: 17px 30px;
+  background-color: orange;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+main .button-area button:hover {
+  color: thistle;
+}
+main .button-area .free {
+  margin-right: 30px;
+}
+
+#cursor {
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: -16px;
+  left: -16px;
+  border-radius: 50%;
+  transition: 0.15s;
+  color: orange;
+}
