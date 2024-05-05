@@ -1,0 +1,66 @@
+*{
+  text-align: center;
+  max-width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+/*header 編集*/
+#header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:10px 0px;
+}
+#myprofile {
+  padding: 10px;
+  border: solid 1px;
+  font-weight: bold;
+}
+#header > nav {
+  display: flex;
+}
+#header > nav > p {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/*main編集*/
+#main-img {
+  width: 100%;
+  margin: 10px;
+}
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#img-about {
+  border-radius: 142px;
+  width: 142px;
+  height: 142px;
+}
+section {
+  margin-bottom: 10px;
+}
+#profile > h3 {
+  text-align: left;
+}
+#profile > li {
+  text-align: left;
+}
+#work {
+  display: flex;
+}
+.work-img {
+  width: 200px;
+  height: auto;
+}
+
+/*footerの編集*/
+
+@media (max-width: 767px) {
+  #work {
+    width: 100%;
+    text-align: center;
+  }
+}
