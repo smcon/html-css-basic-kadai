@@ -1,0 +1,95 @@
+body {
+  margin: 50px 50px 50px 50px;
+}
+/*header編集*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  align-items: center;
+  margin: 0;
+}
+header > div {
+  padding-left: 20px;
+}
+#header-nav {
+  display: flex;
+}
+#header-nav > a {
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+/*main編集*/
+#main-img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+/*section01編集*/
+#catchcopy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.photo {
+  width: 40%;
+  height: auto;
+}
+#catchcopy-box {
+  width: 40%;
+  padding-left: 20px;
+}
+/*section02編集*/
+#information {
+  background-color: #F2F2F2;
+  margin-bottom: 30px;
+}
+#information > h2 {
+  text-align: center;
+  padding: 30px;
+}
+ul {
+  width: 70%;
+  margin: 20px auto;
+}
+.list {
+  display: flex;
+  background-color: white;
+  margin: 10px auto;
+  padding: 20px;
+}
+.list > li {
+  list-style: none;
+}
+/*section03編集*/
+.company {
+  display: flex;
+  justify-content: center;
+}
+.company-01 {
+  width: 40%;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+/*footer編集*/
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+footer > h2 {
+  padding-top: 50px;
+}
+#footer {
+  padding-top: 50px;
+}
+#footer > a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+#copy {
+  padding: 80px;
+}
