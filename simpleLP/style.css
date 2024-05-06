@@ -9,7 +9,7 @@ body {
   width: 100%;
   background-image: url("./images/pc01.jpg");
   background-size: cover;
-  /*いる？？*/
+  background-repeat: repeat-y;
 }
 
 body::after{
