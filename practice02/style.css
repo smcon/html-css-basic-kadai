@@ -71,6 +71,18 @@ ul {
   width: 40%;
   background-color: #F2F2F2;
   text-align: center;
+  display: inline-block;
+}
+.company-01 > h2 {
+  padding: 30px;
+}
+.look {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
 /*footer編集*/
