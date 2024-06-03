@@ -1,0 +1,315 @@
+/*全体の設定*/
+html {
+  font-size: 10px;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/*ハンバーガーメニュー設定*/
+.hamburger {
+  width: 100px;
+  height: 100px;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+/* ハンバーガーメニューの線の設定（メニューが閉じている時） */
+.hamburger span {
+  width: 50px;
+  height: 2px ;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  transition: 0.3s ease-in-out;
+}
+/* 1本目の線の位置を設定 */
+.hamburger span:nth-child(1) {
+  top: 36px;
+}
+/* 2本目の線の位置を設定 */
+.hamburger span:nth-child(2) {
+  top: 50px;
+}
+/* 3本目の線の位置を設定 */
+.hamburger span:nth-child(3) {
+  top: 64px;
+}
+/*
+ハンバーガーメニューの線の設定（メニューが開いている時）
+1本目の線を-45度回転
+*/
+.hamburger.active span:nth-child(1) {
+  top: 47px;
+  left: 25px;
+  background :#fff;
+  transform: rotate(-45deg);
+}
+/* 2本目と3本目は重ねて45度回転 */
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 47px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+#navi {
+  width: 100%;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+  visibility: hidden;
+}
+/*ハンバーガーメニューがクリックされた際に、メニューを表示させる。*/
+#navi.active {
+  opacity: 1;
+  visibility: visible;
+}
+#navi .logo {
+  font-size: 3rem;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+#navi .menu {
+  margin: 80px 0 40px 0;
+}
+#navi .menu li {
+  margin-bottom: 20px;
+}
+#navi .menu a {
+  color: #fff;
+  font-weight: bold;
+}
+#navi .btn {
+  width: 250px;
+  border: solid 1px #fff;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  padding: 15px 0;
+  margin: 0 auto;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+/* ボタンの右と下の線は疑似要素で設定 */
+#navi .btn::after {
+  content: "　";
+  width: 250px;
+  border-right: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  padding: 15px 0;
+  position: absolute;
+  right: -6px;
+  bottom: -6px;
+}
+#navi .btn:hover {
+  background-color: #fff;
+  color: #ff2a2a;
+}
+/*ここまでハンバーガーメニューの設定*/
+
+/*navの編集*/
+header {
+  position: relative;
+}
+#logo {
+  background-color: #333;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#logo h1 {
+  font-size: 6rem;
+  color: #fff;
+}
+#logo p {
+  color: #fff;
+}
+nav {
+  display: block;
+  margin-right: 100px;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul li {
+  font-size: 2rem;
+  padding: 30px;
+}
+/*section01編集*/
+#section01 {
+  position: relative;
+}
+#section01 img {
+  width: 100%;
+  height: auto;
+}
+#section01 h1 {
+  font-size: 5rem;
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#section01 h1 span {
+  filter: drop-shadow(1px 1px 10px #C0C0C0);
+  font-size: 5.9rem;
+}
+#news {
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+  justify-content: center;
+  background-color: #F2F2F2;
+  padding: 20px;
+  width: 60%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/*キャッチコピーの編集*/
+#catchcopy {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.text {
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+}
+/*section03の編集*/
+#section03 {
+  margin-top: 100px;
+  background-image: url(images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#back-img {
+  display: flex;
+  justify-content: center;
+}
+.which {
+  padding: 30px;
+  text-align: center;
+}
+.which img {
+  width: 70%;
+  margin: 10px;
+}
+.which h2 {
+  margin: 10px;
+  font-size: 2rem;
+}
+/*btnアニメーション*/
+.btn{
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #555;/* ボーダーの色と太さ */
+  padding: 10px 30px;
+  text-align: center;
+  outline: none;
+  border-radius: 10px;
+  /*アニメーションの指定*/   
+  transition: ease .2s;
+}
+
+/*ボタン内spanの形状*/
+.btn span {
+position: relative;
+z-index: 3;/*z-indexの数値をあげて文字を背景よりも手前に表示*/
+color:#333;
+font-weight: bold;
+}
+
+.btn:hover span{
+color:#fff;
+font-weight: bold;
+}
+
+/*== 背景が流れる（上から下） */
+.bgtop:before {
+content: '';
+  /*絶対配置で位置を指定*/
+position: absolute;
+top:0;
+left: 0;
+z-index: 2;
+  /*色や形状*/
+background:  skyblue;
+width: 100%;
+height: 0;
+  /*アニメーション*/
+transition:.3s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+}
+
+/*hoverした際の形状*/
+.bgtop:hover:before{
+ height: 100%;  
+ background-color: skyblue;
+}
+/*お問い合わせ編集*/
+#contact {
+  text-align: center;
+}
+#contact h2 {
+  font-size: 2rem;
+}
+#contact #call {
+  font-size: 3rem;
+  margin: 0px;
+}
+/*footerの編集*/
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+footer h2 {
+  font-size: 1.5rem;
+}
+#footer {
+  display: flex;
+  justify-content: center;
+}
+#footer a {
+  color: #fff;
+}
+#footer li {
+  margin: 5px 10px;
+}
